@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://vjs.zencdn.net/8.23.4/video-js.css" rel="stylesheet" />
+<title>test</title>
+<style>
+.vidtest {
+object-fit: fill;
+}
+</style>
+</head>
+<body>
+<p>
+<a href="/watchparty/live">Live</a>
+<a href="/watchparty/low">Low</a>
+<p>
+<div style="width: 100%; height: 90vh;">
+
+<video-js
+  id="vid1"
+  width="1920"
+  height="1080"
+  autoplay="muted"
+  liveui="true"
+  class="vjs-default-skin vjs-fill" controls>
+  <source
+     src="https://ranni.tirazel.io/watchparty/stream/live.m3u8"
+     type="application/x-mpegURL">
+</video-js>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("DOM fully loaded and parsed");
+  var player = videojs('vid1');
+  player.play();
+});
+</script>
+
+
+<script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
+
+</body>
+</html>
