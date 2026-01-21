@@ -22,3 +22,7 @@ In the Nginx rtmp block, use the following settings:
 
 hls_playlist_length can be tuned to find a good tradeoff between latency and stability.
 
+
+## OBS settings
+
+todo
